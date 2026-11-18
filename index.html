@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CITY BOY 🥷</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="mark">CB</span><span class="brand">CITY BOY <b>🥷</b></span></div>
+    <div class="cash">CITY CASH <strong id="cash">250</strong> ¢</div>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">YOUR CITY. YOUR STORY.</p>
+      <h1>BUILD YOUR NAME.<br><span>LIVE YOUR CITY.</span></h1>
+      <p>Explore the streets, complete city challenges and create your own style.</p>
+      <div class="actions">
+        <button id="enterBtn">ENTER CITY</button>
+        <button id="shopBtn" class="secondary">STYLE SHOP</button>
+      </div>
+      <p class="hint">Move with WASD or arrow keys. On phone, use the touch pad.</p>
+    </section>
+    <section class="game-wrap">
+      <div class="game-label">CITY CENTRE <span>• LIVE DEMO</span></div>
+      <canvas id="game"></canvas>
+      <div class="mobile-controls">
+        <div class="dpad">
+          <button data-move="forward">▲</button>
+          <div><button data-move="left">◀</button><button data-move="back">▼</button><button data-move="right">▶</button></div>
+        </div>
+        <button id="shiftBtn" class="shift">CITY SHIFT +50 ¢</button>
+      </div>
+    </section>
+  </main>
+  <section id="shop" class="shop hidden">
+    <div class="shop-head"><div><p class="eyebrow">FRESH LOOKS</p><h2>STYLE SHOP</h2></div><button id="closeShop" class="close">✕</button></div>
+    <div class="items">
+      <article><div class="swatch blue"></div><h3>Skyline Blue</h3><p>Clean city style</p><button data-buy="blue" data-cost="100">BUY · 100 ¢</button></article>
+      <article><div class="swatch gold"></div><h3>Gold Street</h3><p>Stand out in the crowd</p><button data-buy="gold" data-cost="150">BUY · 150 ¢</button></article>
+      <article><div class="swatch violet"></div><h3>Night Violet</h3><p>Your evening look</p><button data-buy="violet" data-cost="200">BUY · 200 ¢</button></article>
+    </div>
+    <p id="shopMessage" role="status"></p>
+  </section>
+  <footer>Unofficial original game demo · Virtual currency only · No real-money purchases</footer>
+  <script src="js/game.js"></script>
+</body>
+</html>
