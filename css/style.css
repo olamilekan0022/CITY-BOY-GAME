@@ -1,0 +1,43 @@
+*{box-sizing:border-box}
+body{margin:0;background:#080d17;color:#f4f7ff;font-family:Arial,sans-serif}
+.topbar{height:66px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:#0c1423;border-bottom:1px solid #26354c;position:relative;z-index:2}
+.mark{display:inline-grid;place-items:center;width:34px;height:34px;background:#43c5ff;color:#06111c;font-weight:900;border-radius:9px;margin-right:10px}
+.brand{font-weight:900;letter-spacing:2px}
+.cash{font-size:12px;color:#a8bbd4}
+.cash strong{color:#68e0ff;font-size:18px;margin-left:8px}
+main{max-width:1200px;margin:auto;padding:42px 5%;display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;align-items:center}
+.eyebrow{color:#57d4ff;font-size:11px;letter-spacing:3px;font-weight:bold}
+.intro h1{font-size:clamp(34px,5vw,62px);line-height:1.02;letter-spacing:-2px;margin:12px 0}
+.intro h1 span{color:#55d4ff}
+.intro>p:not(.eyebrow):not(.hint){color:#aebbd0;line-height:1.6;max-width:420px}
+.actions{display:flex;gap:10px;margin-top:25px;flex-wrap:wrap}
+button{border:0;border-radius:8px;padding:13px 19px;background:#51d2ff;color:#06111c;font-weight:900;cursor:pointer}
+.secondary{background:#17263a;color:#dceaff;border:1px solid #3c536d}
+.hint{color:#8294ac;font-size:12px;margin-top:18px}
+.game-wrap{border:1px solid #30445e;background:#101b2c;padding:10px;border-radius:14px;box-shadow:0 20px 60px #0008}
+.game-label{font-size:10px;letter-spacing:2px;padding:8px 5px 12px;color:#eaf6ff}
+.game-label span{color:#58d5ff}
+#game{width:100%;height:410px;display:block;border-radius:8px;background:linear-gradient(#83b5d2,#d0dbe0)}
+.mobile-controls{display:flex;justify-content:space-between;align-items:end;padding:12px 4px 2px}
+.dpad>div{display:flex;gap:5px;justify-content:center}
+.dpad button{padding:9px 13px;background:#223a56;color:white}
+.dpad>button{display:block;margin:auto auto 5px}
+.shift{background:#e8b94e;color:#211707;font-size:11px}
+.shop{max-width:1100px;margin:0 auto 35px;padding:25px 5%;background:#101b2c;border:1px solid #30445e;border-radius:14px}
+.hidden{display:none}
+.shop-head{display:flex;justify-content:space-between;align-items:center}
+.shop h2{margin:0 0 18px}
+.close{background:#26384f;color:white}
+.items{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.items article{background:#0a1321;border:1px solid #293b54;border-radius:12px;padding:14px}
+.swatch{height:75px;border-radius:8px}
+.blue{background:linear-gradient(120deg,#1262a7,#62d8ff)}
+.gold{background:linear-gradient(120deg,#7d4b0c,#ffd36b)}
+.violet{background:linear-gradient(120deg,#40227f,#c08cff)}
+.items h3{margin-bottom:5px}
+.items p{font-size:12px;color:#9dafc6}
+.items button{width:100%;font-size:11px;padding:10px}
+#shopMessage{color:#67dcff;min-height:18px;font-size:13px}
+footer{text-align:center;color:#6f829b;font-size:11px;padding:18px}
+.mobile-controls button:active,button:active{transform:scale(.97)}
+@media(max-width:800px){main{grid-template-columns:1fr;padding-top:26px;gap:22px}.intro h1{font-size:42px}#game{height:330px}.items{grid-template-columns:1fr}.shop{margin:0 12px 25px}.topbar{padding:0 16px}}
